@@ -74,7 +74,7 @@ namespace CatalogAPI.Controllers
             { return Ok(item); }
         }
 
-        [HttpPost("product")]
+        [HttpPost("product", Name = "AddProductWithImage")]
         [Authorize(Roles ="admin")]
         public ActionResult<CatalogItem> AddProductWithImage()
         {
